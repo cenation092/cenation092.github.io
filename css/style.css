@@ -1,1 +1,10 @@
 @charset "utf-8";
+h1 {
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px auto;
+  letter-spacing: 5px;
+}
