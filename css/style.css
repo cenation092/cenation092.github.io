@@ -6,6 +6,10 @@ h1{
 	color: Red;
 }
 
+a{
+	color: black;
+}
+
 a:hover{
 	color: red;
 }
