@@ -1,0 +1,38 @@
+h1 a, h2 a{
+	color: #C25100;
+	font-family: 'Lobster';
+}
+
+body {
+	background-color: lightblue;
+    font-family: monospace;
+}
+
+.text{
+	background-color: lightyellow;
+	font-family: monospace;
+}
+
+.img {
+	background-color: orange;
+}
+
+.about {
+	background-color: lightgreen;
+    padding-left: 600px;
+    font-family: monospace;
+}
+
+.photos {
+	background-color: lightgrey;
+    padding-left: 560px;
+}
+
+.pic {
+	padding-left: 350px;
+}
+
+.contacts {
+	background-color: yellow;
+	font-family: monospace;
+}
