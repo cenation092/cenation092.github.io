@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lan="eng">
 <title>Mohit Rai</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <meta name="google-site-verification" content="YFde7vLGvyTcXql9dHM_PIQI4FJYJotP8A7XoTjKJLI" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,33 +22,25 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 }
 
+.flex-container > div {
+  background-color: white;
+  margin: 10px;
+  padding: 8px;
+  font-size: 15px;
+}
+
 </style>
 
 
-<body>
+<body >
 
 <!-- Sidebar with image -->
 <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:34%">
   <div class="bgimg"></div>
 </nav>
 
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <!--<a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a> -->
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav>
-
 <!-- Page Content -->
 <div class="p-4 text-dark" style="margin-left:34%">
-
-  <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:80px 16px" id="home">
@@ -59,8 +51,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <div class="text-primary pr-2 pl-2"> Engineer </div>
         <br><br><br>
     </div>
-    <img  src="1.png" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="/w3images/profile.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <img  src="2.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin-left:34%;margin-right:34%;">
+    <img src="2.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
 <form method="get" action="mohit.pdf">
     <button class="w3-button w3-light-grey w3-padding-large w3-margin-top"> 
     Download Resume 
@@ -72,7 +64,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	Download Resume
 -->
   </header>
-  <footer class=" w3-padding-20 bg-white w3-center w3-xxlarge" style="margin:-24px">
+  <footer class=" w3-padding-20 bg-white w3-center w3-xxxlarge" style="margin:-24px">
     <a title="github profile" class="fa fa-github w3-hover-text-black pr-2 pl-2" href="https://github.com/cenation092"  style="color: black"></a>
     <a title="youtube profile" class="fa fa-youtube-play w3-hover-text-black pr-2 pl-2 " href="https://www.youtube.com/c/Gocode/" style="color:rgb(237, 56, 51)"></a>
     <a title="linkedin profile" class="fa fa-linkedin-square w3-hover-text-black  pr-2 pl-2" href="https://www.linkedin.com/in/mohit-rai-4aa576167/" style="color: rgb(40, 119, 181)"></a>
@@ -81,23 +73,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <a title="facebook profile" class="fa fa-facebook-square w3-hover-text-black pr-2 ml-2" href="https://www.facebook.com/cenation092" style="color:rgb(66, 103, 178)"></a>
   </footer>
   <br>
-   <div class="w3-padding-32 w3-content" id="contact" style="margin-bottom:64px">
+   <div class="w3-padding-32 w3-content" id="contact" style="margin-bottom:4px">
       <h2 class=" pl-3", style="color:red"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Creator</h2>
       <hr class="">
-      <div class="d-flex flex-column bd-highlight mb-3">
+      <div class="flex-container bd-highlight mb-3">
         <div>
           <a href="https://www.youtube.com/c/Gocode/"><img src="gocode.png" class="img-fluid pr-2 pl-2"  alt="Responsive image"></a>
           <a href="https://www.youtube.com/c/Gocode/" style="color: black">My YouTube channel go code where we learn programming related stuffs.</a>
-            
+          
         </div>
         <div>
-          <br>
           <a class="fa w3-hover-text-black pl-3 pr-3 w3-xxxlarge" href="https://journeywithdp.blogspot.com/" style="color:rgb(155, 151, 151)" ><img src="blog.png" alt="Responsive image"></a> 
           <a href="https://journeywithdp.blogspot.com/" style="color:black" >My blogs on coding related stuffs.</a> 
           
         </div>
         <div>
-          <br>
           <a class="fa  w3-hover-text-black pl-3 pr-3 w3-xxxlarge" href="https://qr.ae/TWG7Ql" style="color:rgb(0, 0, 0)" ><img src="body.png" alt="Responsive image"></a>
           <a href="https://qr.ae/TWG7Ql" style="color: black">My bodybuilding journey.  </a>
           
@@ -107,37 +97,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
       <h2 class=" pl-3 ", style="color: rgb(70, 146, 35)" ><i class="fa fa-laptop w3-xxxlarge" aria-hidden="true"></i> Competitive Programmer</h2>
       <hr class="">
-      <div class="d-flex flex-row bd-highlight mb-3">
-          <div>
-            <a href="https://www.codechef.com/users/cenation092" style="color: black" ><img src="codechef.png" class="img-fluid pr-2 pl-2"  alt="Responsive image" height="10" width="80" >CodeChef</a>
-            
-          </div>
-          <div>
-              <a href="https://www.hackerrank.com/cenation092?hr_r=1" style="color: black"><img src="hackerrank.png" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="80" >HackerRank</a>
-              
-          </div>
-          <div>
-              <a href="https://www.hackerearth.com/@cenation092" style="color: black"><img src="hackerearth.png" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="80" >HackerEarth</a>
-              
-          </div>
-          <div>
-              <a href="https://www.spoj.com/users/cenation092/" style="color: black"><img src="spoj.png" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="80" >Spoj</a>
-              
-          </div>
-          <div>
-              <a href="https://codeforces.com/profile/last_death" style="color: black"><img src="codeforces1.png" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="80" >Codeforces</a>
-              
-          </div>
-      </div>
-      <div class="d-flex flex-row bd-highlight mb-3">
-          <div>
-              <a href="https://icpc.baylor.edu/ICPCID/SCJERP75UFMP" style="color: black"><img src="acm.jpeg" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="80" >ACM ICPC</a>
-              
-          </div>
-          <div>
-              <a href="https://www.interviewbit.com/profile/mohit-rai" style="color: black"><img src="interview.jpeg" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="80" >InterviewBit</a>
-              
-          </div>
+      <div class="flex-container">
+              <a href="https://www.codechef.com/users/cenation092" style="color: black" ><img src="codechef.png" class="img-fluid pr-2 pl-2"  alt="Responsive image" height="10" width="90" >CodeChef</a>
+          
+              <a href="https://www.hackerrank.com/cenation092?hr_r=1" style="color: black"><img src="hackerrank.png" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="90" >HackerRank</a>
+           
+              <a href="https://www.hackerearth.com/@cenation092" style="color: black"><img src="hackerearth.png" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="90" >HackerEarth</a>
+           
+              <a href="https://www.spoj.com/users/cenation092/" style="color: black"><img src="spoj.png" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="90" >Spoj</a>
+           
+              <a href="https://codeforces.com/profile/last_death" style="color: black"><img src="codeforces1.png" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="90" >Codeforces</a>
+             
+              <a href="https://icpc.baylor.edu/ICPCID/SCJERP75UFMP" style="color: black"><img src="acm.jpeg" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="90" >ACM ICPC</a>
+             
+              <a href="https://www.interviewbit.com/profile/mohit-rai" style="color: black"><img src="interview.jpeg" class="img-fluid pr-2 pl-2 "  alt="Responsive image" height="10" width="90" >InterviewBit</a>
+             
       </div>
       <br><br>
       <h2 class="pl-3 text-primary"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Engineer</h2>
@@ -148,10 +122,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <br><br>
       <h2 class="pl-3" style="color: rgb(0, 0, 0)"><i class="fa fa-map-signs" aria-hidden="true"></i> Contact Me</h2>
       <hr class="">
-      <div class="w3-section">
-        <p style="color:rgb(19, 170, 175)"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right" style="color:rgb(19, 170, 175)"></i> D152 Boys Hostel</p>
-        <p style="color:rgb(19, 170, 175)"><i class="fa fa-fw w3-xxlarge w3-margin-right"></i> CSJM University, Kanpur</p>
-        <p style="color:rgb(19, 170, 175)"><i class="fa  fa-fw w3-xxlarge w3-margin-right"></i> Uttar Pradesh 208024, India</p>
+      <div class="flex-container" >
+        <p style="color:rgb(19, 170, 175)"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right" style="color:rgb(19, 170, 175)"></i> D152 Boys Hostel, CSJM University, 208024 India</p>
         <p style="color: rgb(37, 161, 37)" ><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right" style="color: rgb(37, 161, 37)"></i> Phone: +91 8299529646</p>
         <p style="color:rgb(206, 24, 24)"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color: rgb(206, 24, 24)"> </i> Email: cenation092@gmail.com</p>
       </div>
