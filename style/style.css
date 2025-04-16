@@ -165,3 +165,6 @@ body {
   border-radius: 10px;
 }
 
+p.small {
+  line-height: 2;
+}
