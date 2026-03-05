@@ -474,6 +474,8 @@ body {
 @media (max-width: 768px) {
   .page-wrapper {
     padding: 1rem;
+    align-items: flex-start;
+    padding-top: 5rem;
   }
 
   .tech-card {
@@ -494,6 +496,7 @@ body {
 @media (max-width: 480px) {
   .page-wrapper {
     padding: 0.5rem;
+    padding-top: 3rem;
   }
 
   .tech-card {
