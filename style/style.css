@@ -339,47 +339,29 @@ body {
   height: 50px;
   border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
-  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   background: #fff;
-  border-radius: 14px;
+  border-radius: 16px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.02),
+    0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .social-panel a:hover {
-  color: var(--accent);
+  color: #fff;
+  background: var(--accent);
   border-color: var(--accent);
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-}
-
-.social-panel a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 255, 170, 0.2);
-  transition: left 0.3s ease;
-  z-index: 0;
-}
-
-.social-panel a:hover::before {
-  left: 0;
+  transform: translateY(-4px) scale(1.05);
+  box-shadow:
+    0 12px 20px rgba(217, 119, 87, 0.2),
+    0 4px 8px rgba(217, 119, 87, 0.1);
 }
 
 .social-panel a i {
   position: relative;
   z-index: 1;
-}
-
-.social-panel a:hover {
-  color: #00ffaa;
-  border-color: #00ffaa;
-  box-shadow: 0 0 15px rgba(0, 255, 170, 0.3);
-  transform: translateY(-2px);
 }
 
 /* ===== Minimalist Links ===== */
@@ -392,16 +374,19 @@ body {
 
 .terminal-links a {
   display: inline-block;
-  padding: 0.6rem 1.2rem;
+  padding: 0.6rem 1.4rem;
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-secondary);
-  background: var(--bg-secondary);
+  background: #fff;
   border: 1px solid var(--border-subtle);
   border-radius: 12px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   letter-spacing: 0.02em;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.02),
+    0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .terminal-links a span {
@@ -411,10 +396,10 @@ body {
 
 .terminal-links a:hover {
   color: #fff;
-  background: var(--accent);
-  border-color: var(--accent);
-  box-shadow: 0 4px 12px rgba(217, 119, 87, 0.3);
-  transform: translateY(-2px);
+  background: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+  box-shadow: 0 8px 16px rgba(106, 155, 204, 0.2);
+  transform: translateY(-3px) scale(1.02);
 }
 
 /* ===== Stagger Animations ===== */
