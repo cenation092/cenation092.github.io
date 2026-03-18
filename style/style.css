@@ -5,8 +5,8 @@
   --text-secondary: #3d3929;
   --accent: #d97757;
   /* Claude Orange */
-  --accent-secondary: #6a9bcc;
-  /* Claude Blue */
+  --accent-secondary: #141413;
+  /* Dark Graphite */
   --border-subtle: rgba(20, 20, 19, 0.1);
   --card-bg: rgba(255, 255, 255, 0.8);
 }
@@ -164,74 +164,15 @@ body {
   }
 }
 
-/* ===== Glitch Name ===== */
-.glitch-name {
-  font-family: 'Instrument Serif', serif;
-  font-size: 4rem;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: -0.01em;
+/* ===== Profile Name ===== */
+.profile-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
   color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   position: relative;
-}
-
-.glitch-name::before,
-.glitch-name::after {
-  display: none;
-  /* Removed glitch effect */
-}
-
-@keyframes glitch-anim {
-  0% {
-    clip: rect(10px, 9999px, 83px, 0);
-  }
-
-  20% {
-    clip: rect(61px, 9999px, 35px, 0);
-  }
-
-  40% {
-    clip: rect(40px, 9999px, 12px, 0);
-  }
-
-  60% {
-    clip: rect(87px, 9999px, 55px, 0);
-  }
-
-  80% {
-    clip: rect(25px, 9999px, 7px, 0);
-  }
-
-  100% {
-    clip: rect(93px, 9999px, 16px, 0);
-  }
-}
-
-@keyframes glitch-anim2 {
-  0% {
-    clip: rect(65px, 9999px, 100px, 0);
-  }
-
-  20% {
-    clip: rect(3px, 9999px, 80px, 0);
-  }
-
-  40% {
-    clip: rect(29px, 9999px, 83px, 0);
-  }
-
-  60% {
-    clip: rect(81px, 9999px, 63px, 0);
-  }
-
-  80% {
-    clip: rect(11px, 9999px, 5px, 0);
-  }
-
-  100% {
-    clip: rect(9px, 9999px, 94px, 0);
-  }
 }
 
 /* ===== Title & Status ===== */
@@ -398,7 +339,7 @@ body {
   color: #fff;
   background: var(--accent-secondary);
   border-color: var(--accent-secondary);
-  box-shadow: 0 8px 16px rgba(106, 155, 204, 0.2);
+  box-shadow: 0 8px 16px rgba(20, 20, 19, 0.15);
   transform: translateY(-3px) scale(1.02);
 }
 
@@ -457,7 +398,7 @@ body {
     border-width: 1px;
   }
 
-  .glitch-name {
+  .profile-name {
     font-size: 2.5rem;
   }
 
@@ -478,9 +419,9 @@ body {
     padding: 2rem 1rem;
   }
 
-  .glitch-name {
+  .profile-name {
     font-size: 2rem;
-    letter-spacing: 0.1em;
+    letter-spacing: -0.02em;
   }
 
   .profile-frame {
