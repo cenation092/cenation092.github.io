@@ -109,6 +109,23 @@
     </div>
   </div>
 
+  <!-- Fix for Instagram in-app browser: prevent Universal Link hijacking -->
+  <script>
+    (function () {
+      var ua = navigator.userAgent || navigator.vendor || '';
+      if (ua.indexOf('Instagram') > -1) {
+        document.addEventListener('click', function (e) {
+          var link = e.target.closest('a[target="_blank"]');
+          if (link) {
+            e.preventDefault();
+            e.stopPropagation();
+            window.location.href = link.href;
+          }
+        });
+      }
+    })();
+  </script>
+
 </body>
 
 </html>
